@@ -77,7 +77,7 @@ const[singleNote,setAllSingleNote]=useState<{id:string,title:string,body:string,
     }
     const handleDelete = async()=>{
       try {
-             const res = await fetch(`https://django-note-app-naxf.onrender.com/notes/${slug}`,{
+            await fetch(`https://django-note-app-naxf.onrender.com/notes/${slug}`,{
             method:"DELETE",
             headers:{
         "Content-Type":"application/json"
